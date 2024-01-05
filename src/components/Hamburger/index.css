@@ -1,0 +1,32 @@
+.popup-container {
+  display: none;
+}
+
+.nav-items-container-mobile {
+  display: none;
+}
+
+.model-container {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .popup-container {
+    display: block;
+  }
+
+  .nav-items-container-mobile {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  .model-container {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+  }
+}

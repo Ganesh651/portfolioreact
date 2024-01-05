@@ -28,3 +28,13 @@
 .nav-item {
   margin-right: 10px;
 }
+
+@media screen and (max-width: 767px) {
+  .nav-items-container {
+    display: none;
+  }
+
+  .navbar-container {
+    padding: 5px 10px;
+  }
+}

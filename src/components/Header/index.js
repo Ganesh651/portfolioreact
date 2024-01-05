@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.css'
 import { NavLink } from 'react-router-dom'
+import Hamburger from '../Hamburger'
 
 const Header = () => {
   return (
@@ -25,6 +26,7 @@ const Header = () => {
           </NavLink>
         </li>
       </ul>
+      <Hamburger />
     </nav>
   )
 }

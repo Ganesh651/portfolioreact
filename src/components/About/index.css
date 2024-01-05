@@ -49,3 +49,48 @@
 .form-button {
   text-align: right;
 }
+
+@media screen and (max-width: 767px) {
+  .main-container {
+    padding: 10px;
+  }
+
+  .about-container h3 {
+    font-size: 16px;
+  }
+
+  .about-container h1 {
+    font-size: 20px;
+  }
+
+  .profile-pic {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+  }
+
+  .about-section {
+    justify-content: space-between;
+  }
+
+  .add-projects-container {
+    margin-top: 5px;
+    justify-content: flex-start;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .input-container input {
+    width: 96%;
+  }
+
+  .input-container textarea {
+    width: 96%;
+  }
+}
