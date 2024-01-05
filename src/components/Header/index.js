@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <nav className='navbar-container'>
       <span className='website-logo'>
-        Madelyn Torff
+        <NavLink to="/" className="link">Madelyn Torff</NavLink>
       </span>
       <ul className='nav-items-container'>
         <li className='nav-item'>

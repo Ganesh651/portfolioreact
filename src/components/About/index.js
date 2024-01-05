@@ -40,14 +40,16 @@ const About = () => {
     <div className='main-container '>
       <div className='about-section'>
         <div className='about-container'>
-          <h3>UI/UX Designer</h3>
-          <h1>Hello,  my name is Madelyn Torff</h1>
-          <p>Short text with details about you, what you do or your professional career. You can add more information on the about page.</p>
+          <h3 className='designation'>UI/UX Designer</h3>
+          <h1 className='name'>Hello,  my name is Madelyn Torff</h1>
+          <p className='details'>Short text with details about you, what you do or your professional career. You can add more information on the about page.</p>
           <div className='button-container'>
-            <button type="button" onClick={handdleProjects}>
+            <button type="button"
+              className='projects-button'
+              onClick={handdleProjects}>
               Projects
             </button>
-            <button type="button">
+            <button type="button" className='linkedin-button'>
               Linkedin
             </button>
           </div>
@@ -60,7 +62,7 @@ const About = () => {
         </div>
       </div>
       <div className='add-projects-container'>
-        <h1>Add Project</h1>
+        <h1 className='add-projects'>Add Project</h1>
         <form onSubmit={onAddProjects}>
           <div className='input-container'>
             <label htmlFor='projectName'>Project Name</label><br />
@@ -88,7 +90,7 @@ const About = () => {
             />
           </div>
           <div className='form-button'>
-            <button type="submit">
+            <button type="submit" className='add-button'>
               Add
             </button>
           </div>

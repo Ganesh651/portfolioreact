@@ -11,24 +11,24 @@ const Hamburger = () => {
         modal
         trigger={
           <button type="button" className="trigger-button">
-            <RiMenu3Line />
+            <RiMenu3Line style={{ height: "18px", width: "18px" }} />
           </button>
         }
       >
         {close => (
           <div className='popup-content'>
             <ul className='nav-items-container-mobile'>
-              <li className='nav-item'>
+              <li>
                 <NavLink to="/" className="link">
                   About
                 </NavLink>
               </li>
-              <li className='nav-item'>
+              <li>
                 <NavLink to="/projects" className="link">
                   Projects
                 </NavLink>
               </li>
-              <li className='nav-item'>
+              <li>
                 <NavLink to="/contact" className="link">
                   Contacts
                 </NavLink>
@@ -39,7 +39,7 @@ const Hamburger = () => {
               className="close-button"
               onClick={() => close()}
             >
-              <IoCloseCircleSharp style={{ height: "15px", width: "15px" }} />
+              <IoCloseCircleSharp style={{ height: "16px", width: "16px" }} />
             </button>
           </div>
         )}

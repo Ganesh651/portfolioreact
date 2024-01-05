@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Notfound from './components/Notfound';
 import FormContext from './context/FormContext';
 
 
@@ -28,17 +29,21 @@ const App = () => {
   }
 
   const submitForm = () => {
-    const newProject = {
-      id: uuidv4(),
-      projectName,
-      projectLink,
-      description
+    if (projectLink === "" || projectName === "" || description === "") {
+      alert("Please fill the form before proceeding...")
+    } else {
+      const newProject = {
+        id: uuidv4(),
+        projectName,
+        projectLink,
+        description
+      }
+      setProjectList(prevState => [...prevState, newProject])
+      setDescription("")
+      setProjectLink("")
+      setProjectName("")
+      console.log("project added from the form")
     }
-    setProjectList(prevState => [...prevState, newProject])
-    setDescription("")
-    setProjectLink("")
-    setProjectName("")
-    console.log("project added from the form")
   }
 
 
@@ -59,6 +64,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Footer />} />
         <Route path='/contact' element={< Footer />} />
+        <Route path='*' element={<Notfound />} />
       </Routes>
     </FormContext.Provider >
   )

@@ -1,0 +1,41 @@
+.notfound-container {
+  min-height: 100vh;
+  background-color: #E7EBF4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound {
+  text-align: center;
+}
+
+.notfound h1 {
+  color: rgb(245, 33, 33);
+  font-weight: 600;
+  font-family: "Bree Serif";
+  font-size: 30px;
+}
+
+.go-home-button {
+  background-color: #FDC435;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Bree Serif";
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .notfound h1 {
+    font-size: 24px;
+  }
+
+  .go-home-button {
+    font-size: 12px;
+  }
+}

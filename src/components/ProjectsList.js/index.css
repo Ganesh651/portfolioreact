@@ -1,18 +1,43 @@
 .project-item {
   background-color: #fff;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  object-fit: contain;
+  display: flex;
   border-radius: 10px;
   margin-bottom: 20px;
-  box-sizing: border-box;
-  height: auto;
   align-items: center;
-  width: auto;
+}
+
+.project-details {
+  padding: 20px;
+  width: 40%;
 }
 
 .project-image {
-  height: 524px;
-  width: auto;
+  height: 300px;
+  width: 45%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 
+.project-details h3 {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.project-details p {
+  font-family: "Nunito";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #828282;
+}
+
+.veiw-project-button {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 500;
 }

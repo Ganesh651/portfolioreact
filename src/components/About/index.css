@@ -50,6 +50,87 @@
   text-align: right;
 }
 
+.projects-button {
+  background-color: #FDC435;
+  border: 1px solid #E8ECF4;
+  outline: none;
+  border-radius: 5px;
+  height: 44px;
+  width: 115px;
+  margin: 5px;
+}
+
+.linkedin-button {
+  background-color: transparent;
+  border: 1px solid #000;
+  outline: none;
+  border-radius: 5px;
+  height: 44px;
+  width: 115px;
+  margin: 5px;
+}
+
+/* .about-container {
+  width: 480px;
+} */
+
+.designation {
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #FDC435;
+}
+
+.name {
+  font-family: "Playfair Display";
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.details {
+  font-family: "Nunito";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #828282;
+}
+
+.add-button {
+  background-color: #FDC435;
+  border: 0;
+  outline: none;
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-projects {
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  position: relative;
+}
+
+.add-projects::before {
+  border-bottom: 2px solid #FDC435;
+  border-radius: 10px;
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 50%;
+}
+
+.add-projects::before {
+  left: 25px;
+}
+
+.add-projects::after {
+  right: 0;
+}
+
 @media screen and (max-width: 767px) {
   .main-container {
     padding: 10px;
@@ -92,5 +173,10 @@
 
   .input-container textarea {
     width: 96%;
+  }
+
+  .details {
+    font-size: 15px;
+    line-height: 20px;
   }
 }
