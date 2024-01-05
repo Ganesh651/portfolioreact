@@ -16,7 +16,7 @@ const Hamburger = () => {
         }
       >
         {close => (
-          <div className='model-container'>
+          <div className='popup-content'>
             <ul className='nav-items-container-mobile'>
               <li className='nav-item'>
                 <NavLink to="/" className="link">
@@ -36,10 +36,10 @@ const Hamburger = () => {
             </ul>
             <button
               type="button"
-              className="trigger-button"
+              className="close-button"
               onClick={() => close()}
             >
-              <IoCloseCircleSharp />
+              <IoCloseCircleSharp style={{ height: "15px", width: "15px" }} />
             </button>
           </div>
         )}
