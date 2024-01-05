@@ -5,14 +5,20 @@ import './index.css'
 
 const Projects = () => {
   const { projectsList } = useContext(FormContext)
-  console.log(projectsList)
 
   return (
     <div className='projects-section'>
       <h4 style={{ textAlign: "center" }}>Projects</h4>
-      {projectsList.map(eachProject => (
-        <ProjectList eachProject={eachProject} key={eachProject} />
-      ))}
+      {projectsList.length === 0 ?
+        <div className='no-projects-container'>
+          <p>No Projects Yet.</p>
+        </div> :
+        <>
+          {projectsList.map(eachProject => (
+            <ProjectList eachProject={eachProject} key={eachProject} />
+          ))}
+        </>
+      }
     </div>
   )
 }
